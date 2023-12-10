@@ -3,7 +3,7 @@ import './App.css';
 function App() {
 
   return (
-    <p className='App' padding={10} margin={5}>
+    <p className='App'>
       Coming Soon...
     </p>
   );
