@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 import CustomTab from '../../common/tab/CustomTab';
 import Content from './Content';
 import CarouselDefault from '../../common/carousel/CarouselDefault';
-import { createTheme } from '@mui/material';
 
 const Detail = () => {
     const products = useSelector(state => state.products.product);

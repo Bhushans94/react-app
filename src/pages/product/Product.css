@@ -172,6 +172,7 @@
     display: flex;
     position: relative;
     border: 1px solid #f0f0f0;
+    margin-right: 20px;
 }
 
 .mds-product-quantity input {
@@ -181,7 +182,7 @@
     width: 74px;
     font-size: 32px;
     text-align: center;
-    padding: 10px 0;
+    padding: 11px 0;
 }
 
 .mds-product-quantity button {
@@ -193,7 +194,7 @@
 }
 
 .mds-product-details-footer .mdc-button {
-    padding: 30px 20px;
+    padding: 19px 20px;
     font-size: 18px;
     width: 202px;
     box-shadow: none;
@@ -202,11 +203,13 @@
 
 .mds-product-details-footer .mdc-button--raised {
     background-color: #e73c17;
-    border: none;
+    border: 1px solid #e73c17;
+    color: #fff;
 }
 
 .mds-product-details-footer .mdc-button--outlined {
     color: #e73c17;
     border: 1px solid #e73c17;
     margin-left: 20px;
+    background-color: #fff;
 }

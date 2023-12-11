@@ -31,7 +31,7 @@ const CustomTab = ({ data, defaultValue }) => {
                                         {
                                             data.headers.map((header, index) => {
                                                 return (
-                                                    <Tab key={`tabHeader${index}`} className='mdc-tab__content mdc-tab__text-label' label={header} value={index} />
+                                                    <Tab key={`tabHeader${index}`} className='mdc-tab mdc-tab__text-label' label={header} value={index} />
                                                 )
                                             })
                                         }

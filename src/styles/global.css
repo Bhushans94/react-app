@@ -420,6 +420,7 @@
 
     .mds-product-details-footer .mdc-button {
         font-size: 10px;
+        padding: 11px 8px;
     }
 
     .mds-product-quantity input {
@@ -441,10 +442,41 @@
         height: 48px;
     }
 
-    .mdc-tab-content {
+    .MuiTabPanel-root.mdc-tab-content {
         word-break: break-word;
         font-size: 12px;
-        line-height: 10px;
+        line-height: 16px;
+        padding: 16px 0;
+    }
+
+    .MuiButtonBase-root.mdc-tab {
+        font-size: 16px;
+        margin: 0 5px;
+    }
+
+    .carousel.carousel-slider {
+        height: 241px;
+    }
+
+    .carousel .slide img {
+        height: 150px;
+    }
+
+    .carousel .thumbs-wrapper {
+        margin: 20px 0;
+    }
+
+    .carousel .thumbs {
+        display: flex;
+        padding: 0;
+    }
+
+    .carousel .thumb {
+        width: 60px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .mds-footer-tile {
