@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 // Custom components
 
 import App from './App';
-import RouteLayout from './routes/RouteLayout';
+import AppLayout from './layout/AppLayout';
 import Product from './pages/product/Product';
 
 // Global style
@@ -16,7 +16,7 @@ import './styles/global.css';
 
 const router = createBrowserRouter([
   {
-    path: '/', element: <RouteLayout />, children: [
+    path: '/', element: <AppLayout />, children: [
       { path: '/', element: <App /> },
       { path: '/pages', element: <App /> },
       { path: '/contact', element: <App /> },

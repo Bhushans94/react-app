@@ -39,19 +39,19 @@
         },
         "images": [
             {
-                "src": "/assets/images/thumnail-lg.png",
+                "src": "/assets/images/thumnail-lg.webp",
                 "alt": "TV Image"
             },
             {
-                "src": "/assets/images/thumb-2.png",
+                "src": "/assets/images/thumb-2.webp",
                 "alt": "TV Image"
             },
             {
-                "src": "/assets/images/thumb-3.png",
+                "src": "/assets/images/thumb-3.webp",
                 "alt": "TV Image"
             },
             {
-                "src": "/assets/images/thumb-4.png",
+                "src": "/assets/images/thumb-4.webp",
                 "alt": "TV Image"
             }
         ]
