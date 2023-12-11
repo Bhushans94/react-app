@@ -16,7 +16,11 @@ const Detail = () => {
                             <>
                                 <div key={'detail' + index} className="mds-container">
                                     <div  key={'wrapper' + index} className="mds-products-details-wrapper">
-                                        <CarouselDefault key={'carousel' + index} images={product.images} showStatus={false} showIndicators={false} />
+                                        <CarouselDefault key={'carousel' + index} 
+                                          images={product.images} 
+                                          showStatus={false} 
+                                          title={'*LG C2 42 (106cm) 4K Smart OLED evo TV'}
+                                          showIndicators={false} />
                                         <Content key={'content' + index} product={product} />
                                     </div>
                                 </div>

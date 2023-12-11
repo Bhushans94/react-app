@@ -4,7 +4,7 @@ import Rating from '../../common/rating/Rating';
 import Stepper from '../../common/stepper/Stepper';
 
 const Content = ({ product }) => {
-    const [activeIndex, setActiveIndex] = useState(null);
+    const [activeIndex, setActiveIndex] = useState(0);
     const [qty, setQty] = useState(0);
 
     // function to show repetitive label data
@@ -26,15 +26,13 @@ const Content = ({ product }) => {
         setActiveIndex(index);
     }
 
-    // function to decrement quantity
-    const decrementQty = () => {
-        if (qty > 0)
-            setQty(qty - 1);
-    }
-
-    // function to increment quantity
-    const incrementQty = () => {
-        setQty(qty + 1);
+    // function to update quantity
+    const updateQty = (option) => {
+        if(option === 'increase') {
+            setQty(qty + 1);
+        } else {
+            qty > 0 && setQty(qty - 1);
+        }
     }
 
     return (
@@ -89,7 +87,7 @@ const Content = ({ product }) => {
 
                 <div className="mds-product-details-footer">
 
-                    <Stepper qty={qty} decrementQty={decrementQty} incrementQty={incrementQty} />
+                    <Stepper qty={qty} decrementQty={() => updateQty('decrease')} incrementQty={() => updateQty('increase')} />
 
                     <button className="mdc-button mdc-button--raised">
                         <span className="mdc-button__label">Buy Now</span>

@@ -7,7 +7,7 @@ import Header from '../common/header/Header';
 import Footer from '../common/footer/Footer';
 import Breadcrumb from '../common/breadcrumb/Breadcrumb';
 
-const RouteLayout = () => {
+const AppLayout = () => {
 
     const [currentRoute, setCurrentRoute] = useState('HOME');
     const [currentHeader, setCurrentHeader] = useState('HOME');
@@ -32,4 +32,4 @@ const RouteLayout = () => {
     )
 }
 
-export default RouteLayout;
+export default AppLayout;

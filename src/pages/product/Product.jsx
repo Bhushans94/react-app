@@ -14,9 +14,13 @@ const Product = () => {
      * funtion to get product details and dispatch products and item count
      */
     const getData = async () => {
-        const res = await getProductData('/assets/data/products.json');
-        dispatch(productAction.addProductData(res.data));
-        dispatch(cartAction.addCartItemsCount(res.data.length));
+        try {
+            const res = await getProductData();
+            dispatch(productAction.addProductData(res.data));
+            dispatch(cartAction.addCartItemsCount(res.data.length));
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     // hook to call API on component load
