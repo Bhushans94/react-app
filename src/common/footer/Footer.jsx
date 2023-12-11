@@ -30,7 +30,7 @@ const Footer = () => {
 		return socialIcons.map((icons, index) => {
 			return (
 				<a href="#" key={`social-${index}`}>
-					<img src={icons} height={32} width={32} alt='social icon' />
+					<img src={icons} alt='social icon' />
 				</a>
 			)
 		})
@@ -46,7 +46,7 @@ const Footer = () => {
 	return (
 		<div className="mds-footer-container">
 			<div className="mds-footer-img-wrapper">
-				<img src='/assets/images/footer.jpg' className="w-full" />
+				<img src='/assets/images/footer.webp' className="w-full" />
 			</div>
 			<div className="mds-footer-links-wrapper">
 				<div className="mds-footer-col-first">
